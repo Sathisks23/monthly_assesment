@@ -1,0 +1,297 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'PT Sans', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: white;
+    padding:20px 10px;
+}
+.nav-menu-ul{
+    display: flex;
+    gap:10px;
+    
+}
+.nav-menu-list{
+    list-style: none;
+}
+.tech-type-ul>li{
+    list-style: none;
+}
+.tech-type-ul>li>i{
+    font-size:18px;
+   
+    color:rgba(123, 160, 230, 0.705);
+    margin-right: 3px;
+}
+.nav-menu-list>a{
+    text-decoration: none;
+    color: black;
+}
+.banner{
+
+    background-image:url(images/hero-banner.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+   padding-left:100px;
+    justify-content: center;
+    
+   background-repeat:no-repeat;
+   width:92%;
+   height:700px;
+}
+
+.banner>*{
+    
+   min-width: 300px;
+   max-width: 300px;
+    color:white;
+    
+}
+.banner>h2{
+    font-size:36px;
+    font-weight:300px;
+    
+}
+.div1{
+padding-top:100px;
+ margin:0 auto;
+ min-width: 300px;
+ max-width: 500px;
+}
+.div1ul{
+    display: flex;
+}
+.div1ul>li{
+    list-style:none;
+}
+.div2{
+    min-width:300px;
+    width:90%;
+    margin:0 auto;
+    height:100%;
+   
+}
+
+.div2div1{
+    display: flex;
+    background-color: #CFDBE9;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+.div2div1>*{
+  
+    width:50%;
+}
+.div2img>img{
+    width:100%;
+    height:100%;
+    border-radius:20px 0 0 20px;
+}
+.div2p{
+    min-width:300px;
+    line-height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:100px 20px;
+    text-align:justify;
+   
+}
+.div2p>p{
+    max-width: 450px;
+}
+.side-heading{
+    border-left:5px solid blue ;
+    padding-left: 5px;
+    font-size:25px;
+}
+.div3{
+   padding-top:100px;
+    display: flex;
+    max-width: 90%;
+    margin:0 auto;
+}
+
+.div3>*{
+    width: 50%;
+}
+
+.div3div1>p{
+    max-width:460px;
+    min-width:320;
+}
+.di3cont{
+    display: flex;
+}
+
+.boxcont{
+    width: 100%;
+}
+
+
+.div5{
+    
+    max-width:90%;
+   gap: 30px;
+   display: flex;
+   align-items: center;
+
+}
+
+
+.div4,.div5{
+    display: flex;
+    flex-wrap: wrap;
+     width: 100%;
+}
+
+.box{
+    display: flex;
+    box-shadow:1px 1px 1px rgb(202, 198, 198);
+    margin:2px;
+    width:300px;
+    height:100px;
+    margin:0 auto;
+    margin: 5px;
+   
+}
+.box>p{
+    background-color: white;
+}
+
+.box>img{
+    background-color:lightgray;
+    width:35px;
+    background-position:center;
+}
+
+.div6cont{
+    width: 100%;
+   max-width: 90%;
+   margin:0 auto;
+ 
+}
+.tablediv{
+   
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+td,th{
+   
+    padding:12px  100px;
+    text-align: center;
+
+}
+tr:nth-child(2n-1){
+    background-color:rgb(243, 243, 243);
+    padding: 10px;
+    color: black
+    
+}
+
+tr:nth-child(1){
+    
+    color:white;
+    background-color:#011533;
+}
+
+.div7{
+    display: flex;
+    color: white;
+    background-color: #011533;
+    border-bottom: 10px solid blue;
+}
+.div7>*{
+    width:50%;
+    height:100%;
+   padding:20px 0 50px 30px  ;
+}
+.div71>*{
+    max-width: 350px;
+    
+}
+.div72{
+    padding:100px;
+    height: 100%;
+
+}
+.div72>iframe{
+    
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+
+footer{
+   text-align: center;
+   background-color:#011533 ;
+   padding:0;
+   margin:0;
+   color: white;
+}
+footer>p{
+    margin: 0;
+    padding:0;
+}
+
+@media(max-width:375px){
+   
+    header>*{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner{
+        height: auto;
+       
+        padding: 0;
+    }
+    .banner>h2{
+        font-size:20px;
+        line-height:20px;
+    }
+    .banner>p{
+        font-size:12px;
+    }
+    td,th{
+       
+        padding:12px  10px;
+        text-align: center;
+    
+    }
+
+    .div1,.div2,.div3{
+        flex-direction: column;
+    }
+    .div2div1>*{
+        width: 100%;
+    }
+
+   .div3>*{
+        width: 100%;
+    }
+  .div7{
+    flex-direction: column;
+  }
+  .div7>*{
+    width: 100%;
+  }
+  .div72{
+   padding:0;
+  }
+   
+}
